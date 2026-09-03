@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>43Tracker Privacy Policy</title>
+<style>
+  :root {
+    --paper: #f7f6f2;
+    --surface: #ffffff;
+    --ink: #17171a;
+    --fog: #5b5f6a;
+    --hairline: #e2ded4;
+    --slate: #2f5d78;
+    --slate-soft: #e7eef1;
+    --mono-chip: #efece3;
+    --good: #2f6b4f;
+    --good-soft: #e7f1ea;
+    --no-soft: #f2f1ec;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0b0b0d;
+      --surface: #131316;
+      --ink: #ededf0;
+      --fog: #9a9ba5;
+      --hairline: #27272c;
+      --slate: #86adc6;
+      --slate-soft: #182631;
+      --mono-chip: #1b1b20;
+      --good: #7fc19d;
+      --good-soft: #142520;
+      --no-soft: #18181c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0b0b0d;
+    --surface: #131316;
+    --ink: #ededf0;
+    --fog: #9a9ba5;
+    --hairline: #27272c;
+    --slate: #86adc6;
+    --slate-soft: #182631;
+    --mono-chip: #1b1b20;
+    --good: #7fc19d;
+    --good-soft: #142520;
+    --no-soft: #18181c;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .brand-mark {
+    flex: 0 0 auto;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Sans", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+    letter-spacing: -0.5px;
+  }
+  :root[data-theme="dark"] .brand-mark,
+  :root:not([data-theme="light"]) .brand-mark {
+    box-shadow: 0 0 0 1px var(--hairline);
+  }
+
+  .brand-name {
+    font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--fog);
+  }
+
+  h1 {
+    font-family: "IBM Plex Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: -0.3px;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .dek {
+    font-family: "IBM Plex Sans", Arial, sans-serif;
+    color: var(--fog);
+    font-size: 15px;
+    margin: 0 0 4px;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+    font-size: 12.5px;
+    color: var(--fog);
+    margin: 0 0 48px;
+  }
+
+  .lede {
+    font-size: 19px;
+    color: var(--ink);
+    margin: 0 0 56px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .lede em { font-style: italic; color: var(--slate); }
+
+  section { margin-bottom: 48px; }
+  section:last-of-type { margin-bottom: 0; }
+
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .sec-num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    color: var(--slate);
+    background: var(--slate-soft);
+    padding: 2px 8px;
+    border-radius: 4px;
+    flex: 0 0 auto;
+  }
+
+  h2 {
+    font-family: "IBM Plex Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  p { margin: 0 0 14px; color: var(--ink); }
+  section > p:last-child { margin-bottom: 0; }
+
+  code {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.85em;
+    background: var(--mono-chip);
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    color: var(--ink);
+  }
+
+  a { color: var(--slate); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }
+
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  li:last-child { margin-bottom: 0; }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "IBM Plex Sans", Arial, sans-serif;
+    font-size: 14.5px;
+    min-width: 480px;
+  }
+
+  thead th {
+    text-align: left;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--fog);
+    font-weight: 500;
+    padding: 12px 16px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:nth-child(odd) { background: var(--surface); }
+
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    padding: 3px 9px;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  .status.no { background: var(--no-soft); color: var(--fog); }
+  .status.yes { background: var(--good-soft); color: var(--good); }
+
+  .foot {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--hairline);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px;
+    color: var(--fog);
+  }
+  .foot a { color: var(--fog); }
+
+  @media (max-width: 520px) {
+    .page { padding: 48px 18px 72px; }
+    h1 { font-size: 27px; }
+    .lede { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<div class="page">
+  <div class="brand">
+    <div class="brand-mark">43</div>
+    <div class="brand-name">43Tracker</div>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="dek">A Chrome extension that tracks your deck, graveyard, banished pile, and opponent reveals while you duel on Duelingbook.</p>
+  <p class="meta">Effective September 2, 2026</p>
+
+  <p class="lede">The short version: 43Tracker reads the duel you're already playing and keeps a running count on your screen. <em>Nothing it reads ever leaves your device.</em> There is no account, no analytics, and no server operated by 43Tracker.</p>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">01</span><h2>What 43Tracker does</h2></div>
+    <p>43Tracker is a side-panel extension for <code>duelingbook.com</code>. Its single purpose is live duel tracking: while you play, it reads the game state already rendered in your browser — your remaining deck, graveyard, and banished cards, sorted by Monster / Spell / Trap — and displays a running count. It also lets you import a decklist for comparison and log opponent cards revealed during the match (for example, by Trap Dustshoot).</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">02</span><h2>What it reads, and why</h2></div>
+    <p>To do this, 43Tracker's content scripts read card names and counts directly out of the Duelingbook page you're viewing — the same information already visible to you on screen. Chrome classifies this as <strong>website content</strong>, which is why this policy exists. It does not read your Duelingbook password, your messages, or any part of the page unrelated to the duel in progress.</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">03</span><h2>Where it's stored</h2></div>
+    <p>Everything 43Tracker reads is written to <code>chrome.storage.local</code> — Chrome's on-device storage for extensions. It stays on your machine, moving only between the extension's own scripts and its side panel, so the panel can display it. It is cleared automatically when a new duel starts, and entirely when you remove the extension.</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">04</span><h2>The one outside request it makes</h2></div>
+    <p>43Tracker fetches public card metadata — names and images, not personal data — from the YGOPRODeck API (<code>db.ygoprodeck.com</code>) to display cards in an imported decklist. No duel data, hand contents, or identifying information is sent as part of that request.</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">05</span><h2>What we don't collect</h2></div>
+    <p>Using Chrome's own data-usage categories, here's exactly what 43Tracker touches:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Data category</th><th>Collected</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Website content (duel state: card names &amp; counts)</td><td><span class="status yes">● used, on‑device only</span></td></tr>
+          <tr><td>Personally identifiable information</td><td><span class="status no">✕ not collected</span></td></tr>
+          <tr><td>Health information</td><td><span class="status no">✕ not collected</span></td></tr>
+          <tr><td>Financial &amp; payment information</td><td><span class="status no">✕ not collected</span></td></tr>
+          <tr><td>Authentication data (passwords, PINs)</td><td><span class="status no">✕ not collected</span></td></tr>
+          <tr><td>Personal communications</td><td><span class="status no">✕ not collected</span></td></tr>
+          <tr><td>Location</td><td><span class="status no">✕ not collected</span></td></tr>
+          <tr><td>Web browsing history</td><td><span class="status no">✕ not collected</span></td></tr>
+          <tr><td>User activity (clicks, keystrokes, mouse tracking)</td><td><span class="status no">✕ not collected</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">06</span><h2>Sharing and sale</h2></div>
+    <ul>
+      <li>43Tracker does not sell or transfer user data to third parties.</li>
+      <li>Data is never used for any purpose outside the single tracking function described above.</li>
+      <li>Data is never used to determine creditworthiness or for lending purposes.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">07</span><h2>Your controls</h2></div>
+    <p>Since everything lives in local browser storage, clearing it is entirely in your hands: it resets automatically at the start of each new duel, or you can remove all of it at once by uninstalling the extension from <code>chrome://extensions</code>.</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">08</span><h2>Changes to this policy</h2></div>
+    <p>If 43Tracker's data practices change, this page will be updated and the extension's Chrome Web Store listing will reflect the new effective date above.</p>
+  </section>
+
+  <section>
+    <div class="sec-head"><span class="sec-num">09</span><h2>Contact</h2></div>
+    <p>Questions about this policy or how 43Tracker works can be sent to <a href="mailto:43kostadinov@gmail.com">43kostadinov@gmail.com</a>.</p>
+  </section>
+
+  <div class="foot">43Tracker is not affiliated with Duelingbook or Konami.</div>
+</div>
+
+</body>
+</html>
